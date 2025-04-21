@@ -236,93 +236,96 @@ const AboutPage = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-16 bg-white">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-4 text-center">Our Leadership Team</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-          Meet the passionate minds driving Cloud Tech Mind Solutions with vision, innovation, and a deep 
-          commitment to transforming careers.
-          </p>
+<section className="py-16 bg-white">
+  <div className="container px-4 md:px-6">
+    <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-4 text-center">Our Leadership Team</h2>
+    <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
+      Meet the passionate minds driving Cloud Tech Mind Solutions with vision, innovation, and a deep 
+      commitment to transforming careers.
+    </p>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex flex-col items-center">
-                <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop"
-                    alt="Dr. Jennifer Wright"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-1">Mr. Iyan Raj</h3>
-                <p className="text-[#3A59D1] font-medium mb-4">Founder & CEO</p>
-                <p className="text-gray-600 text-center">
-                With over two decades of IT industry experience, Iyan leads CTMS with a mission to bridge 
-                the gap between education and employment. His vision has empowered thousands of learners to
-                transition into successful tech careers.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex flex-col items-center">
-                <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop"
-                    alt="Mr. Robert Chen"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-1">Mr. Shanmughanadhan</h3>
-                <p className="text-[#3A59D1] font-medium mb-4">Chief Technical Advisor</p>
-                <p className="text-gray-600 text-center">
-                A senior IT strategist with 20+ years in the industry, Shanmughanadhan designs our technical
-                 programs and consulting frameworks, ensuring alignment with current enterprise demands
-                  and future trends.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex flex-col items-center">
-                <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1000&auto=format&fit=crop"
-                    alt="Ms. Aisha Johnson"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-1">Ms. Amudhambigai</h3>
-                <p className="text-[#3A59D1] font-medium mb-4">Head of Learning & Career Growth</p>
-                <p className="text-gray-600 text-center">
-                Driven by her passion for education and student success, Amudhambigai oversees all learning pathways, 
-                working closely with learners to map out personalized growth strategies and career transitions.
-                </p>
-              </div>
-            </div>
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* New Member - Ms. Anitha KM */}
+      <div className="bg-gray-50 p-6 rounded-lg">
+        <div className="flex flex-col items-center">
+          <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop"
+              alt="Ms. Anitha KM"
+              className="h-full w-full object-cover"
+            />
           </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-16 bg-[#3A59D1]">
-        <div className="container px-4 md:px-6 text-center text-white">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">Join the CTMS Learning Community</h2>
-          <p className="max-w-2xl mx-auto mb-8 text-white/90">
-          We invite you to be part of our mission to transform careers through industry-aligned education and
-           hands-on experience. Take the first step toward your future in tech—explore our programs and 
-           connect with our experts today..
+          <h3 className="text-xl font-bold mb-1">Ms. Anitha KM</h3>
+          <p className="text-[#3A59D1] font-medium mb-4">Director</p>
+          <p className="text-gray-600 text-center">
+            Anitha KM is an entrepreneur with a strong passion for teaching and IT product development.
+            She brings valuable experience from both academia and the tech industry, helping CTMS shape its
+            educational and product strategy.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="bg-white text-[#3A59D1] hover:bg-gray-100">
-              <Link to="/admissions">Enroll Now</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-[#3A59D1] hover:bg-white/10">
-              <Link to="/contact">Book a Free Career Counselling Session</Link>
-            </Button>
-          </div>
         </div>
-      </section>
+      </div>
+
+      {/* New Member - Ms. Rajasree R */}
+      <div className="bg-gray-50 p-6 rounded-lg">
+        <div className="flex flex-col items-center">
+          <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1545994385-539553adcc06?q=80&w=1000&auto=format&fit=crop"
+              alt="Ms. Rajasree R"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <h3 className="text-xl font-bold mb-1">Ms. Rajasree R</h3>
+          <p className="text-[#3A59D1] font-medium mb-4">Talent Acquisition & Management</p>
+          <p className="text-gray-600 text-center">
+            Rajasree is responsible for handling recruitment and workforce development, helping CTMS attract
+            and retain top talent in the industry.
+          </p>
+        </div>
+      </div>
+
+      {/* New Member - Mr. Dhayal M V */}
+      <div className="bg-gray-50 p-6 rounded-lg">
+        <div className="flex flex-col items-center">
+          <div className="h-32 w-32 rounded-full overflow-hidden mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1000&auto=format&fit=crop"
+              alt="Mr. Dhayal M V"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <h3 className="text-xl font-bold mb-1">Mr. Dhayal M V</h3>
+          <p className="text-[#3A59D1] font-medium mb-4">Python Full Stack Developer</p>
+          <p className="text-gray-600 text-center">
+            Dhayal contributes to full stack web development at CTMS, delivering robust, scalable solutions
+            using modern Python technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Call to Action */}
+<section className="py-16 bg-[#3A59D1]">
+  <div className="container px-4 md:px-6 text-center text-white">
+    <h2 className="text-3xl font-bold tracking-tight mb-4">Join the CTMS Learning Community</h2>
+    <p className="max-w-2xl mx-auto mb-8 text-white/90">
+      We invite you to be part of our mission to transform careers through industry-aligned education and
+      hands-on experience. Take the first step toward your future in tech—explore our programs and 
+      connect with our experts today..
+    </p>
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <Button asChild size="lg" className="bg-white text-[#3A59D1] hover:bg-gray-100">
+        <Link to="/admissions">Enroll Now</Link>
+      </Button>
+      <Button asChild variant="outline" size="lg" className="border-white text-[#3A59D1] hover:bg-white/10">
+        <Link to="/contact">Book a Free Career Counselling Session</Link>
+      </Button>
+    </div>
+  </div>
+</section>
+
     </Layout>
   );
 };
