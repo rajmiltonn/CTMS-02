@@ -21,36 +21,6 @@ const HomePage = () => {
     <Layout>
 
       {/* Hero Section */} <section className="relative bg-white dark:bg-gray-900">
-        <div className="relative h-[70vh] w-full overflow-hidden">
-          <img
-            src={HeroImage}
-            alt="School building"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/30 dark:bg-black/50" />
-          <div className="container relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
-          <h1 className="mb-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl hero-text">
-  Welcome to<br />
-  Cloud Tech Mind Solutions
-</h1>
-
-            <p className="mb-8 max-w-xl text-lg text-white/90 hero-text">
-            Empowering minds, transforming careers, and accelerating excellence in digital education and 
-            CRM innovation since inception.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button asChild size="lg" className="bg-[#3A59D1] hover:bg-[#2A49C1] dark:bg-blue-600 dark:hover:bg-blue-700">
-                <Link to="/admissions">Kickstart Your IT Career</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-[#3A59D1] hover:bg-white/10">
-                <Link to="/contact">Get Started</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hero Section */} <section className="relative bg-white dark:bg-gray-900">
       <div className="relative h-[70vh] w-full overflow-hidden">
           <img
             src={HeroImage}
