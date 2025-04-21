@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Trophy, Users, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -17,26 +18,43 @@ import DiverseStudentsImage from '@/assets/diverse-students.jpg';
 import StudentsThumbsUpImage from '@/assets/students-thumbsup.jpg';
 
 const HomePage = () => {
+  const heroImages = [HeroImage, LibraryImage, ScienceLabImage];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout>
 
-      {/* Hero Section */} <section className="relative bg-white dark:bg-gray-900">
-      <div className="relative h-[70vh] w-full overflow-hidden">
-          <img
-            src={HeroImage}
-            alt="School building"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
+      {/* Hero Section */}
+      <section className="relative bg-white dark:bg-gray-900">
+        <div className="relative h-[70vh] w-full overflow-hidden">
+          <AnimatePresence>
+            <motion.img
+              key={heroImages[currentImage]}
+              src={heroImages[currentImage]}
+              alt="Hero Slide"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </AnimatePresence>
           <div className="absolute inset-0 bg-black/30 dark:bg-black/50" />
           <div className="container relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white md:px-6">
-          <h1 className="mb-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl hero-text">
-  Welcome to<br />
-  Cloud Tech Mind Solutions
-</h1>
-
+            <h1 className="mb-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl hero-text">
+              Welcome to<br />
+              Cloud Tech Mind Solutions
+            </h1>
             <p className="mb-8 max-w-xl text-lg text-white/90 hero-text">
-            Empowering minds, transforming careers, and accelerating excellence in digital education and 
-            CRM innovation since inception.
+              Empowering minds, transforming careers, and accelerating excellence in digital education and 
+              CRM innovation since inception.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg" className="bg-[#3A59D1] hover:bg-[#2A49C1] dark:bg-blue-600 dark:hover:bg-blue-700">
@@ -49,6 +67,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* ...Rest of your homepage sections go here... */}
+
      
 
       {/* About Us Preview */}
